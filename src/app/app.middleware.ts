@@ -5,7 +5,8 @@ export const requestUrl = (req: Request, res: Response, next: NextFunction) => {
     next()
 }
 
-export const defaultErrorHandler = (error: any, req: Request, res: Response, next: NextFunction) => {
+export const defaultErrorHandler = (error: any, request: Request, response: Response, next: NextFunction) => {
+    if (error.message) console.log('🚧', error.message)
     let statusCode: number, message: string
     switch (error.message) {
         default:
@@ -13,6 +14,5 @@ export const defaultErrorHandler = (error: any, req: Request, res: Response, nex
             message = '服务器暂时出了点小问题～～😄'
             break
     }
-    res.statusCode = statusCode
-    res.send({message})
+    response.status(statusCode).send(message)
 }
