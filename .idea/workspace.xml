@@ -5,55 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b93da41-bdd5-4b43-ab38-571b339ee06b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/app/database/mysql.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/app/database/mysql.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/app/database/mysql.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/post/post.model.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/post/post.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/post/post.model.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/database/mysql.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/post/post.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.controll.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.controll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.controll.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.controller.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.controller.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.middleware.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.middleware.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.model.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.model.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.router.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.router.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.service.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/user/user.service.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/user/user.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/user/user.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/user/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/user/user.router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/user/user.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.config.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.config.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.config.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.config.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.controller.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.controller.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.controller.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.router.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.service.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.service.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="295aMep5SpfCHR9ZGwJ3dmE0FOO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -63,24 +64,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.13.2&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.39&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kscissorfootdoctor/Desktop/xb2-node&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/kscissorfootdoctor/Desktop/xb2-node/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.13.2",
+    "javascript.nodejs.core.library.typings.version": "16.11.39",
+    "last_opened_file_path": "/Users/kscissorfootdoctor/Desktop/xb2-node",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/kscissorfootdoctor/Desktop/xb2-node/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/post" />
@@ -106,7 +108,7 @@
       <workItem from="1655204467743" duration="641000" />
       <workItem from="1655342943310" duration="5188000" />
       <workItem from="1655361419331" duration="4268000" />
-      <workItem from="1655425882692" duration="7678000" />
+      <workItem from="1655425882692" duration="9045000" />
     </task>
     <servers />
   </component>
