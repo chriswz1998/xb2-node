@@ -5,28 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b93da41-bdd5-4b43-ab38-571b339ee06b" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.conntroller.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.conntroller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.conntroller.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.router.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.router.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.service.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/auth/auth.service.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auth/auth.conntroller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auth/auth.middlewar.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auth/auth.router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/index.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.controller.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.controller.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.controller.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.middleware.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.middleware.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.middleware.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.middleware.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.router.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/user/user.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.service.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/user/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/user/user.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.service.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +109,7 @@
       <workItem from="1655342943310" duration="5188000" />
       <workItem from="1655361419331" duration="4268000" />
       <workItem from="1655425882692" duration="9146000" />
-      <workItem from="1655703944381" duration="3468000" />
+      <workItem from="1655703944381" duration="6219000" />
     </task>
     <servers />
   </component>

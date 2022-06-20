@@ -10,10 +10,19 @@ export const createUser = async (user: UserModel) => {
     return data
 }
 
-export const getUsersByName = async (name: string) => {
+interface GetUserOptions {
+    password?: boolean
+}
+
+export const getUsersByName = async (name: string, options: GetUserOptions = {}) => {
+    const {password} = options
     const statement = `
-        select id, name from user
-        where name = ?
+        select 
+            id,
+            name
+            ${password ? ', password' : ''}
+        from user
+            where name = ?
     `
     const [data] = await connection.promise().query(statement, name)
     return data[0]

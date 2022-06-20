@@ -11,10 +11,15 @@ const createUser = async (user) => {
     return data;
 };
 exports.createUser = createUser;
-const getUsersByName = async (name) => {
+const getUsersByName = async (name, options = {}) => {
+    const { password } = options;
     const statement = `
-        select id, name from user
-        where name = ?
+        select 
+            id,
+            name
+            ${password ? ', password' : ''}
+        from user
+            where name = ?
     `;
     const [data] = await mysql_1.connection.promise().query(statement, name);
     return data[0];

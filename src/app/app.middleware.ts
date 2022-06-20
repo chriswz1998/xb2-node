@@ -18,8 +18,16 @@ export const defaultErrorHandler = (error: any, request: Request, response: Resp
             message = '请提供密码'
             break
         case 'USER_ALREADY_EXIT':
-            statusCode = 400
+            statusCode = 409
             message = '用户名已存在'
+            break
+        case 'USER_DOES_NOT_EXIT':
+            statusCode = 400
+            message = '用户不存在'
+            break
+        case 'PASSWORD_DOES_NOT_MATCH':
+            statusCode = 400
+            message = '密码错误'
             break
         default:
             statusCode = 500
