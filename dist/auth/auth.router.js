@@ -31,5 +31,6 @@ const authController = __importStar(require("./auth.conntroller"));
 const auth_middlewar_1 = require("./auth.middlewar");
 const router = express_1.default.Router();
 router.post('/login', auth_middlewar_1.validateLoginDate, authController.login);
+router.post('/auth/validate', auth_middlewar_1.authGuard, authController.validate);
 exports.default = router;
 //# sourceMappingURL=auth.router.js.map

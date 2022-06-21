@@ -6,3 +6,4 @@ npm-debug.log*
 .SD_Store
 .idea
 .env*
+config/*.key
