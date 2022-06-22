@@ -8,14 +8,13 @@ export const getPosts = async () => {
             post.title, 
             post.content, 
         JSON_OBJECT(
-            'id', user.id,
+            'userId', user.id,
             'name', user.name
         ) AS user
         FROM post
         LEFT JOIN user
-            ON user.id = post.id
+            ON user.id = post.userId
     `
-
     const [data] = await connection.promise().query(statement)
     return data
 }

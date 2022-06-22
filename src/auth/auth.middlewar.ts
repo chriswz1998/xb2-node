@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt'
 import * as userService from '../user/user.service'
 import jwt from 'jsonwebtoken'
 import { PUBLIC_KEY } from '../app/app.config'
+import { TokenPayload } from './auth.interface'
 
 export const validateLoginDate = async (request: Request, response: Response, next: NextFunction) => {
     console.log('👮‍ 验证登录数据')
@@ -27,7 +28,8 @@ export const authGuard = (request: Request, response: Response, next: NextFuncti
         if (!authorization) throw new Error()
         const token = authorization.replace('Bearer ', '')
         if (!token) throw new Error()
-        jwt.verify(token, PUBLIC_KEY, {algorithms: ['RS256']})
+        const decoded = jwt.verify(token, PUBLIC_KEY, {algorithms: ['RS256']})
+        request.user = <TokenPayload>decoded
         next()
     } catch (e) {
         next(new Error('UNAUTHORIZED'))

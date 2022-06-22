@@ -13,16 +13,10 @@ export const index = async (req: Request, res: Response, next: NextFunction) => 
 
 export const store = async (req: Request, res: Response, next: NextFunction) => {
     const {title, content} = req.body
-    if (!title) {
-        res.status(201).send('title不能为空')
-        return
-    }
-    if (!content) {
-        res.status(201).send('content不能为空')
-        return
-    }
+    const {id: userId} = req.user
+
     try {
-        const data = await createPost({title, content})
+        const data = await createPost({title, content, userId})
         res.status(201).send(data)
     } catch (e) {
         next(e)

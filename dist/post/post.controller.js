@@ -18,16 +18,9 @@ const index = async (req, res, next) => {
 exports.index = index;
 const store = async (req, res, next) => {
     const { title, content } = req.body;
-    if (!title) {
-        res.status(201).send('title不能为空');
-        return;
-    }
-    if (!content) {
-        res.status(201).send('content不能为空');
-        return;
-    }
+    const { id: userId } = req.user;
     try {
-        const data = await (0, post_service_1.createPost)({ title, content });
+        const data = await (0, post_service_1.createPost)({ title, content, userId });
         res.status(201).send(data);
     }
     catch (e) {

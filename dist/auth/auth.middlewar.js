@@ -57,7 +57,8 @@ const authGuard = (request, response, next) => {
         const token = authorization.replace('Bearer ', '');
         if (!token)
             throw new Error();
-        jsonwebtoken_1.default.verify(token, app_config_1.PUBLIC_KEY, { algorithms: ['RS256'] });
+        const decoded = jsonwebtoken_1.default.verify(token, app_config_1.PUBLIC_KEY, { algorithms: ['RS256'] });
+        request.user = decoded;
         next();
     }
     catch (e) {

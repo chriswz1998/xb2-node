@@ -16,6 +16,7 @@ const login = async (request, response, next) => {
 exports.login = login;
 const validate = async (request, response, next) => {
     response.sendStatus(200);
+    console.log(request.user);
 };
 exports.validate = validate;
 //# sourceMappingURL=auth.conntroller.js.map
