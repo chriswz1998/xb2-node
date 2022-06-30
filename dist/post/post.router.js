@@ -33,7 +33,7 @@ const auth_middlewar_1 = require("../auth/auth.middlewar");
 const router = express_1.default.Router();
 router.get('/posts', app_middleware_1.requestUrl, postController.index);
 router.post('/posts', auth_middlewar_1.authGuard, postController.store);
-router.patch('/posts/:postId', postController.update);
-router.delete('/posts/:postId', postController.destroy);
+router.patch('/posts/:postId', auth_middlewar_1.authGuard, (0, auth_middlewar_1.accessControl)({ possession: true }), postController.update);
+router.delete('/posts/:postId', auth_middlewar_1.authGuard, (0, auth_middlewar_1.accessControl)({ possession: true }), postController.destroy);
 exports.default = router;
 //# sourceMappingURL=post.router.js.map

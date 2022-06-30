@@ -5,33 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b93da41-bdd5-4b43-ab38-571b339ee06b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/auth/auth.interface.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/auth/auth.interface.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/auth/auth.interface.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth/auth.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/express.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/auth/auth.conntroller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.conntroller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/auth/auth.conntroller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.conntroller.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/auth/auth.middlewar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/auth/auth.middlewar.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/auth/auth.middlewar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.controller.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.model.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.model.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.model.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.model.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/auth/auth.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.service.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/auth/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/auth/auth.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.service.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/post/post.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/post/post.router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.router.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.service.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/user/user.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/user/user.service.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.conntroller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.conntroller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/auth.middlewar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.middlewar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/post/post.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +99,9 @@
       <workItem from="1655425882692" duration="9146000" />
       <workItem from="1655703944381" duration="10147000" />
       <workItem from="1655801061538" duration="2293000" />
-      <workItem from="1655866602623" duration="3219000" />
+      <workItem from="1655866602623" duration="5502000" />
+      <workItem from="1655973236717" duration="3533000" />
+      <workItem from="1656572623512" duration="915000" />
     </task>
     <servers />
   </component>

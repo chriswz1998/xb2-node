@@ -35,6 +35,10 @@ const defaultErrorHandler = (error, request, response, next) => {
             statusCode = 401;
             message = '请先登录';
             break;
+        case 'USER_DOES_NOT_OWN_RESOURCE':
+            statusCode = 403;
+            message = '不能处理这个内容';
+            break;
         default:
             statusCode = 500;
             message = '服务器暂时出了点小问题～～😄';
