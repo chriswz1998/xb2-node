@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b93da41-bdd5-4b43-ab38-571b339ee06b" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/src/file/file.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file/file.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file/file.router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file/file.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.middleware.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.middleware.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/auth/auth.middlewar.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/auth/auth.middlewar.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/auth/auth.middlewar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.middlewar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/auth/auth.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.service.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/auth/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/auth/auth.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/auth/auth.service.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/post/post.router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/post/post.router.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.middlewar.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.middlewar.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +60,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/kscissorfootdoctor/Desktop/xb2-node/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -101,7 +95,8 @@
       <workItem from="1655801061538" duration="2293000" />
       <workItem from="1655866602623" duration="5502000" />
       <workItem from="1655973236717" duration="3533000" />
-      <workItem from="1656572623512" duration="915000" />
+      <workItem from="1656572623512" duration="1950000" />
+      <workItem from="1656666607309" duration="794000" />
     </task>
     <servers />
   </component>
