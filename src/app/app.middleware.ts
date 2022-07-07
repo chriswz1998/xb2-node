@@ -36,6 +36,19 @@ export const defaultErrorHandler = (error: any, request: Request, response: Resp
         case 'USER_DOES_NOT_OWN_RESOURCE':
             statusCode = 403
             message = '不能处理这个内容'
+
+            break
+        case 'FILE_NOT_FOUND':
+            statusCode = 404
+            message = '文件不存在'
+            break
+        case 'TAG_ALREADY_EXITS':
+            statusCode = 400
+            message = '标签已存在'
+            break
+        case 'POST_ALREADY_HAS_THIS_TAG':
+            statusCode = 400
+            message = '内容已经有这个标签'
             break
         default:
             statusCode = 500

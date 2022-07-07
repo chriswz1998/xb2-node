@@ -46,3 +46,30 @@ export const deletePost = async (postId: number) => {
     const [data] = await connection.promise().query(statement, postId)
     return data
 }
+
+export const createPostTag = async (postId: number, tagId: number) => {
+    const statement = `
+        insert into post_tag (postId, tagId)
+        values(?, ?)
+    `
+    const [data] = await connection.promise().query(statement, [postId, tagId])
+    return data
+}
+
+export const postHasTag = async (postId: number, tagId: number) => {
+    const statement = `
+    select * from post_tag
+    where postId=? and tagId=?
+`
+    const [data] = await connection.promise().query(statement, [postId, tagId])
+    return !!data[0]
+}
+
+export const deletePostTag = async (postId: number, tagId: number) => {
+    const statement = `
+        delete from post_tag
+        where postId = ? and tagId = ?
+    `
+    const [data] = await connection.promise().query(statement, [postId, tagId])
+    return data
+}

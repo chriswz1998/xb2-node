@@ -1,6 +1,8 @@
 import { Request, Response, NextFunction } from 'express'
 import _ from 'lodash'
-import { createPost, deletePost, getPosts, updatePost } from './post.service'
+import { createPost, createPostTag, deletePost, deletePostTag, getPosts, postHasTag, updatePost } from './post.service'
+import { TagModel } from '../tag/tag.model'
+import { createTag, getTagByName } from '../tag/tag.service'
 
 export const index = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -40,6 +42,53 @@ export const destroy = async (req: Request, res: Response, next: NextFunction) =
     try {
         const data = await deletePost(parseInt(postId, 10))
         res.send(data)
+    } catch (e) {
+        next(e)
+    }
+}
+
+export const storePostTag = async (request: Request, response: Response, next: NextFunction) => {
+    const {postId} = request.params
+    const {name} = request.body
+    if (!name) return response.status(404).send('要写报文的！🦕')
+    let tag: TagModel
+    try {
+        tag = await getTagByName(name)
+    } catch (e) {
+        next(e)
+    }
+    if (tag) {
+        try {
+            const postTag = await postHasTag(parseInt(postId, 10), tag.id)
+            if (postTag) return next(new Error('POST_ALREADY_HAS_THIS_TAG'))
+        } catch (e) {
+            return next(e)
+        }
+    }
+
+    if (!tag) {
+        try {
+            const data = await createTag({name})
+            tag = {id: data.insertId}
+        } catch (e) {
+            return next(e)
+        }
+    }
+
+    try {
+        await createPostTag(parseInt(postId, 10), tag.id)
+        response.sendStatus(201)
+    } catch (e) {
+        next(e)
+    }
+}
+
+export const destroyPostTag = async (request: Request, response: Response, next: NextFunction) => {
+    const {postId} = request.params
+    const {tagId} = request.body
+    try {
+        await deletePostTag(parseInt(postId, 10), tagId)
+        response.sendStatus(200)
     } catch (e) {
         next(e)
     }
