@@ -16,7 +16,7 @@ export const sqlFragment = {
         LEFT JOIN LATERAL (
             SELECT * FROM file
             WHERE file.postId = post.id
-            ORDER BY file DESC
+            ORDER BY file.id DESC
             LIMIT 1
         ) AS file ON post.id = file.postId
     `,
@@ -33,6 +33,6 @@ export const sqlFragment = {
             ),
             NULL
         ) AS JSON
-)
+) as file
     `
 }

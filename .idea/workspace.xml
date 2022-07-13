@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b93da41-bdd5-4b43-ab38-571b339ee06b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/comment/comment.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/comment/comment.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/comment/comment.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/comment/comment.router.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/comment/comment.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/post/post.provider.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/post/post.provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.provider.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +96,8 @@
       <workItem from="1657350554466" duration="1621000" />
       <workItem from="1657455248845" duration="5059000" />
       <workItem from="1657590219790" duration="5436000" />
+      <workItem from="1657687350801" duration="603000" />
+      <workItem from="1657690510988" duration="536000" />
     </task>
     <servers />
   </component>
