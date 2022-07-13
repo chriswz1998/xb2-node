@@ -50,6 +50,10 @@ export const defaultErrorHandler = (error: any, request: Request, response: Resp
             statusCode = 400
             message = '内容已经有这个标签'
             break
+        case 'UNABLE_TO_REPlY_THIS_COMMENT':
+            statusCode = 400
+            message = '无法评论这个信息'
+            break
         default:
             statusCode = 500
             message = '服务器暂时出了点小问题～～😄'

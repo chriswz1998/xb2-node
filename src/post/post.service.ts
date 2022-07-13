@@ -1,5 +1,6 @@
 import { connection } from '../app/database/mysql'
 import { PostModel } from './post.model'
+import { sqlFragment } from './post.provider'
 
 export const getPosts = async () => {
     const statement = `
@@ -7,13 +8,13 @@ export const getPosts = async () => {
             post.id, 
             post.title, 
             post.content, 
-        JSON_OBJECT(
-            'userId', user.id,
-            'name', user.name
-        ) AS user
+        ${sqlFragment.user},
+        ${sqlFragment.totalComments},
+        ${sqlFragment.file}
         FROM post
-        LEFT JOIN user
-            ON user.id = post.userId
+       ${sqlFragment.leftJoinUser}
+       ${sqlFragment.leftJoinOneFile}
+       group by post.id
     `
     const [data] = await connection.promise().query(statement)
     return data
