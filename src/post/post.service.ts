@@ -2,7 +2,23 @@ import { connection } from '../app/database/mysql'
 import { PostModel } from './post.model'
 import { sqlFragment } from './post.provider'
 
-export const getPosts = async () => {
+interface GetPostOptions {
+    sort?: string,
+    filter?: GetPostOptionsFilter
+}
+
+export interface GetPostOptionsFilter {
+    name: string
+    sql?: string
+    param?: string
+}
+
+export const getPosts = async (options: GetPostOptions) => {
+    const {sort, filter} = options
+    let params: Array<any> = []
+    if (filter.param) {
+        params = [filter.param, ...params]
+    }
     const statement = `
         SELECT 
             post.id, 
@@ -10,13 +26,17 @@ export const getPosts = async () => {
             post.content, 
         ${sqlFragment.user},
         ${sqlFragment.totalComments},
-        ${sqlFragment.file}
+        ${sqlFragment.file},
+        ${sqlFragment.tags}
         FROM post
        ${sqlFragment.leftJoinUser}
        ${sqlFragment.leftJoinOneFile}
+       ${sqlFragment.leftJoinTag}
+       where ${filter.sql}
        group by post.id
+       order by ${sort}
     `
-    const [data] = await connection.promise().query(statement)
+    const [data] = await connection.promise().query(statement, params)
     return data
 }
 

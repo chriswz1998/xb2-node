@@ -24,15 +24,39 @@ export const sqlFragment = {
         CAST(
             IF(
                 COUNT(file.id),
-                GROUP_CONCAT(
-                DISTINCT JSON_OBJECT(
-                    'id', file.id,
-                    'width', file.width,
-                    'height', file.height
-                )
-            ),
+                     GROUP_CONCAT(
+                        DISTINCT JSON_OBJECT(
+                            'id', file.id,
+                            'width', file.width,
+                            'height', file.height
+                        )
+                    ),
             NULL
-        ) AS JSON
-) as file
+            ) AS JSON
+        ) as file
+    `,
+    leftJoinTag: `
+        left join
+            post_tag on post_tag.postId = post.id
+        left join
+            tag on post_tag.tagId = tag.id
+    `,
+    tags: `
+        cast(
+           if(
+                count(tag.id),
+                concat(
+                    '[',
+                        group_concat(
+                            distinct json_object(
+                                'id', tag.id,
+                                'name', tag.name
+                            )
+                        ),
+                     ']'
+                ),
+                null
+           ) as json
+        ) as tags
     `
 }

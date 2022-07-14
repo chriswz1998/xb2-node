@@ -1,12 +1,20 @@
 import { Request, Response, NextFunction } from 'express'
 import _ from 'lodash'
-import { createPost, createPostTag, deletePost, deletePostTag, getPosts, postHasTag, updatePost } from './post.service'
+import {
+    createPost,
+    createPostTag,
+    deletePost,
+    deletePostTag,
+    getPosts,
+    postHasTag,
+    updatePost
+} from './post.service'
 import { TagModel } from '../tag/tag.model'
 import { createTag, getTagByName } from '../tag/tag.service'
 
 export const index = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const posts = await getPosts()
+        const posts = await getPosts({sort: req.sort, filter: req.filter})
         res.send(posts)
     } catch (e) {
         next(e)
