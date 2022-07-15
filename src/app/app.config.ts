@@ -8,7 +8,8 @@ export const {
     MYSQL_PASSWORD,
     MYSQL_USER,
     MYSQL_HOST,
-    MYSQL_DATABASE
+    MYSQL_DATABASE,
+    POSTS_PRE_PAGE
 } = process.env
 
 export let {

@@ -2,11 +2,11 @@ import express from 'express'
 
 import * as postController from './post.controller'
 import { accessControl, authGuard } from '../auth/auth.middlewar'
-import { filter, sort } from './post.middleware'
+import { filter, paginate, sort } from './post.middleware'
 
 const router = express.Router()
 
-router.get('/posts', sort, filter, postController.index)
+router.get('/posts', sort, filter, paginate, postController.index)
 
 router.post('/posts', authGuard, postController.store)
 

@@ -5,7 +5,7 @@ import {
     createPostTag,
     deletePost,
     deletePostTag,
-    getPosts,
+    getPosts, getPostTotalCount,
     postHasTag,
     updatePost
 } from './post.service'
@@ -14,7 +14,14 @@ import { createTag, getTagByName } from '../tag/tag.service'
 
 export const index = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const posts = await getPosts({sort: req.sort, filter: req.filter})
+        const totalCount = await getPostTotalCount({filter: req.filter})
+        // @ts-ignore
+        res.header('X-Total-Count', totalCount)
+    } catch (e) {
+        next(e)
+    }
+    try {
+        const posts = await getPosts({sort: req.sort, filter: req.filter, pagination: req.pagination})
         res.send(posts)
     } catch (e) {
         next(e)

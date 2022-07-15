@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
+import { POSTS_PRE_PAGE } from '../app/app.config'
 
 export const sort = async (request: Request, response: Response, next: NextFunction) => {
     const {sort} = request.query
@@ -43,5 +44,13 @@ export const filter = async (request: Request, response: Response, next: NextFun
         }
     }
 
+    next()
+}
+
+export const paginate = async (request: Request, response: Response, next: NextFunction) => {
+    const {page = 1} = request.query
+    const limit = parseInt(POSTS_PRE_PAGE, 10) || 30
+    const offset = limit * (page as number - 1)
+    request.pagination = {limit, offset}
     next()
 }

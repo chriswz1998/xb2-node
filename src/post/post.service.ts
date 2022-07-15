@@ -4,7 +4,13 @@ import { sqlFragment } from './post.provider'
 
 interface GetPostOptions {
     sort?: string,
-    filter?: GetPostOptionsFilter
+    filter?: GetPostOptionsFilter,
+    pagination?: GetPostOptionsPagination
+}
+
+export interface GetPostOptionsPagination {
+    limit: number
+    offset: number
 }
 
 export interface GetPostOptionsFilter {
@@ -14,7 +20,7 @@ export interface GetPostOptionsFilter {
 }
 
 export const getPosts = async (options: GetPostOptions) => {
-    const {sort, filter} = options
+    const {sort, filter, pagination: {limit, offset}} = options
     let params: Array<any> = []
     if (filter.param) {
         params = [filter.param, ...params]
@@ -35,6 +41,8 @@ export const getPosts = async (options: GetPostOptions) => {
        where ${filter.sql}
        group by post.id
        order by ${sort}
+       limit ?
+       offset ?
     `
     const [data] = await connection.promise().query(statement, params)
     return data
@@ -93,4 +101,19 @@ export const deletePostTag = async (postId: number, tagId: number) => {
     `
     const [data] = await connection.promise().query(statement, [postId, tagId])
     return data
+}
+
+export const getPostTotalCount = async (options: GetPostOptions) => {
+    const {filter} = options
+    let params = [filter.param]
+    const statement = `
+        select
+            count(distinct post.id) as total
+        from post
+        ${sqlFragment.leftJoinUser}
+        ${sqlFragment.leftJoinOneFile}
+        ${sqlFragment.leftJoinTag}
+        where ${filter.sql}
+    `
+    const [data] = await connection.promise().query(statement, params)
 }
