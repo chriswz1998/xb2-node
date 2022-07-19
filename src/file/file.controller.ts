@@ -7,6 +7,8 @@ import * as fs from 'fs'
 
 export const store = async (request: Request, response: Response, next: NextFunction) => {
     const {id: userId} = request.user
+    console.log('🚀 ~ file: file.controller.ts ~ line 9 ~ store ~ userId', userId)
+
     const {post: postId} = request.query
     const fileInfo = _.pick(request.file, [
         'originalname',

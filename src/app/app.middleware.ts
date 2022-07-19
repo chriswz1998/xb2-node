@@ -54,6 +54,10 @@ export const defaultErrorHandler = (error: any, request: Request, response: Resp
             statusCode = 400
             message = '无法评论这个信息'
             break
+        case 'FILE_TYPE_NOT_ACCEPT':
+            statusCode = 400
+            message = '该类型文件不能上传❌'
+            break
         default:
             statusCode = 500
             message = '服务器暂时出了点小问题～～😄'

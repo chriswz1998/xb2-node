@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b93da41-bdd5-4b43-ab38-571b339ee06b" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/post/post.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/avatar/avatar.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/avatar/avatar.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/avatar/avatar.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/avatar/avatar.router.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/avatar/avatar.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.provider.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/post/post.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/post/post.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/express.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/express.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xb2-node.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xb2-node.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/file.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/file/file.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file/file.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/file/file.middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.13.2",
-    "javascript.nodejs.core.library.typings.version": "16.11.39",
-    "last_opened_file_path": "/Users/kscissorfootdoctor/Desktop/xb2-node",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editing.templates",
-    "settings.editor.splitter.proportion": "0.39282665",
-    "ts.external.directory.path": "/Users/kscissorfootdoctor/Desktop/xb2-node/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.13.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.39&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kscissorfootdoctor/Desktop/xb2-node&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.39282665&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/kscissorfootdoctor/Desktop/xb2-node/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/post" />
@@ -106,6 +110,9 @@
       <workItem from="1657690510988" duration="536000" />
       <workItem from="1657760917651" duration="1511000" />
       <workItem from="1657786181640" duration="1947000" />
+      <workItem from="1657847788256" duration="10983000" />
+      <workItem from="1658044847083" duration="1411000" />
+      <workItem from="1658197958092" duration="592000" />
     </task>
     <servers />
   </component>
